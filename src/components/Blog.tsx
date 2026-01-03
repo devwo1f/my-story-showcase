@@ -19,14 +19,6 @@ const blogPosts: BlogPost[] = [
     category: "Data Engineering",
   },
   {
-    title: "My Journey from Library Assistant to AI Engineer",
-    excerpt:
-      "Reflecting on the unconventional path that led me from managing library systems to building machine learning models.",
-    date: "Nov 2025",
-    readTime: "8 min read",
-    category: "Career",
-  },
-  {
     title: "Azure Certifications: A Comprehensive Guide",
     excerpt:
       "Tips and strategies for preparing and passing Azure Data Engineer and AI Associate certifications.",
