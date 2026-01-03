@@ -10,28 +10,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "Real-Time Data Pipeline",
+    title: "Smart Traffic Sign Recognition for Autonomous Vehicles",
     description:
-      "Engineered high-performance data pipelines at Accenture for processing streaming data with optimized cloud infrastructure.",
-    tags: ["Python", "Cloud", "Data Engineering"],
+      "Developed a computer vision pipeline using EfficientNet to detect 50+ road signs. Applied quantization techniques and TensorRT to accelerate inference speed by 3x (60 FPS), enabling real-time processing for autonomous navigation.",
+    tags: ["Python", "Computer Vision", "EfficientNet", "TensorRT"],
   },
   {
-    title: "Language Model Optimization",
+    title: "Findflix Movie Recommendation",
     description:
-      "Research project focused on improving NLP model accuracy through enhanced data preprocessing and pipeline optimization.",
-    tags: ["NLP", "Python", "Machine Learning"],
-  },
-  {
-    title: "Koha Library Management System",
-    description:
-      "Managed and customized open-source library management system for university operations, including digital archive organization.",
-    tags: ["System Administration", "Database"],
-  },
-  {
-    title: "E-Sports Tournament Platform",
-    description:
-      "Organized and managed technical infrastructure for campus-wide competitive gaming events including networking and live streaming.",
-    tags: ["Event Management", "Networking"],
+      "Architected a hybrid recommendation engine using embedding vectors and collaborative filtering; achieved an NDCG score of 0.88 (18% above baseline). Focused on production scalability, optimizing the data loading pipeline for real-time predictions",
+    tags: ["Python", "Machine Learning", "Collaborative Filtering", "Embedding Vectors"],
   },
 ];
 

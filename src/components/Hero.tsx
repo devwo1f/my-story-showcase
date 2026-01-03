@@ -1,5 +1,4 @@
 import { ArrowDown, Mail, Linkedin, MapPin } from "lucide-react";
-import heroAnimation from "@/assets/hero-animation.mp4";
 
 const Hero = () => {
   return (
@@ -32,9 +31,8 @@ const Hero = () => {
       />
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          {/* Left content */}
-          <div className="space-y-6 md:space-y-8">
+        {/* Left content */}
+        <div className="space-y-6 md:space-y-8">
             <div className="space-y-2">
               <p className="text-muted-foreground font-mono text-xs md:text-sm animate-slide-up">
                 Data Science & AI Engineer
@@ -88,27 +86,6 @@ const Hero = () => {
               </a>
             </div>
           </div>
-
-          {/* Right side - Animated figure */}
-          <div className="hidden md:flex items-center justify-center animate-slide-up animate-delay-300">
-            <div className="relative">
-              <div className="animate-float-figure">
-                <video 
-                  src={heroAnimation} 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-80 lg:w-96 opacity-90"
-                />
-              </div>
-              {/* Decorative elements around figure */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 border border-accent/30 rounded-full animate-pulse" />
-              <div className="absolute -bottom-8 -left-8 w-16 h-16 border border-foreground/10 rounded-full" />
-              <div className="absolute top-1/2 -right-12 w-3 h-3 bg-accent/40 rounded-full" />
-            </div>
-          </div>
-        </div>
       </div>
       
       {/* Bottom fade */}

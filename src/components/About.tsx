@@ -30,6 +30,9 @@ const About = () => {
       "Cloud Engineering",
       "NLP",
       "Computer Vision",
+      "TensorRT",
+      "EfficientNet",
+      "Embedding Vectors"
     ],
     certifications: [
       "Databricks Certified Data Engineer",
