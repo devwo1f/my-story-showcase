@@ -2,8 +2,35 @@ import { ArrowDown, Mail, Linkedin, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 pt-20">
-      <div className="max-w-6xl mx-auto w-full">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 pt-20 overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 hero-gradient" />
+      
+      {/* Floating orbs */}
+      <div 
+        className="hero-orb w-[500px] h-[500px] bg-accent/20 -top-48 -right-48"
+        style={{ animationDelay: '0s' }}
+      />
+      <div 
+        className="hero-orb w-[400px] h-[400px] bg-accent/10 top-1/2 -left-32"
+        style={{ animationDelay: '-5s' }}
+      />
+      <div 
+        className="hero-orb w-[300px] h-[300px] bg-primary/5 bottom-0 right-1/4"
+        style={{ animationDelay: '-10s' }}
+      />
+      
+      {/* Subtle grid overlay */}
+      <div 
+        className="absolute inset-0 opacity-[0.015]"
+        style={{
+          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
+                           linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px'
+        }}
+      />
+
+      <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="space-y-8">
           <div className="space-y-2">
             <p className="text-muted-foreground font-mono text-sm animate-slide-up">
@@ -59,6 +86,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };
